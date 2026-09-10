@@ -74,6 +74,20 @@ Documentation: https://docs.nvidia.com/cuda/index.html
 Compiler for CUDA applications.
 
 
+About cuda-nvcc_win-arm64
+-------------------------
+
+Home: https://developer.nvidia.com/cuda-toolkit
+
+Package license: [LicenseRef-NVIDIA-End-User-License-Agreement](https://docs.nvidia.com/cuda/eula/index.html)
+
+Summary: Compiler activation scripts for CUDA applications.
+
+Documentation: https://docs.nvidia.com/cuda/index.html
+
+Compiler for CUDA applications.
+
+
 Current build status
 ====================
 
@@ -98,6 +112,7 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--nvcc__linux--64-green.svg)](https://anaconda.org/conda-forge/cuda-nvcc_linux-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-nvcc_linux-64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_linux-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-nvcc_linux-64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_linux-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-nvcc_linux-64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_linux-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--nvcc__linux--aarch64-green.svg)](https://anaconda.org/conda-forge/cuda-nvcc_linux-aarch64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-nvcc_linux-aarch64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_linux-aarch64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-nvcc_linux-aarch64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_linux-aarch64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-nvcc_linux-aarch64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_linux-aarch64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--nvcc__win--64-green.svg)](https://anaconda.org/conda-forge/cuda-nvcc_win-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-nvcc_win-64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_win-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-nvcc_win-64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_win-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-nvcc_win-64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_win-64) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--nvcc__win--arm64-green.svg)](https://anaconda.org/conda-forge/cuda-nvcc_win-arm64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-nvcc_win-arm64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_win-arm64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-nvcc_win-arm64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_win-arm64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-nvcc_win-arm64.svg)](https://anaconda.org/conda-forge/cuda-nvcc_win-arm64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cuda--nvvm-green.svg)](https://anaconda.org/conda-forge/cuda-nvvm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cuda-nvvm.svg)](https://anaconda.org/conda-forge/cuda-nvvm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cuda-nvvm.svg)](https://anaconda.org/conda-forge/cuda-nvvm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cuda-nvvm.svg)](https://anaconda.org/conda-forge/cuda-nvvm) |
 
 Installing cuda-nvcc
@@ -117,7 +132,7 @@ How to use
 <summary>With conda</summary>
 
 ```
-conda install cuda-crt cuda-nvcc cuda-nvcc_linux-64 cuda-nvcc_linux-aarch64 cuda-nvcc_win-64 cuda-nvvm
+conda install cuda-crt cuda-nvcc cuda-nvcc_linux-64 cuda-nvcc_linux-aarch64 cuda-nvcc_win-64 cuda-nvcc_win-arm64 cuda-nvvm
 ```
 
 </details>
@@ -126,7 +141,7 @@ conda install cuda-crt cuda-nvcc cuda-nvcc_linux-64 cuda-nvcc_linux-aarch64 cuda
 <summary>With mamba</summary>
 
 ```
-mamba install cuda-crt cuda-nvcc cuda-nvcc_linux-64 cuda-nvcc_linux-aarch64 cuda-nvcc_win-64 cuda-nvvm
+mamba install cuda-crt cuda-nvcc cuda-nvcc_linux-64 cuda-nvcc_linux-aarch64 cuda-nvcc_win-64 cuda-nvcc_win-arm64 cuda-nvvm
 ```
 
 </details>
@@ -136,9 +151,9 @@ mamba install cuda-crt cuda-nvcc cuda-nvcc_linux-64 cuda-nvcc_linux-aarch64 cuda
 
 ```
 # for adding to your local project
-pixi add cuda-crt cuda-nvcc cuda-nvcc_linux-64 cuda-nvcc_linux-aarch64 cuda-nvcc_win-64 cuda-nvvm
+pixi add cuda-crt cuda-nvcc cuda-nvcc_linux-64 cuda-nvcc_linux-aarch64 cuda-nvcc_win-64 cuda-nvcc_win-arm64 cuda-nvvm
 # for installing globally
-pixi global install cuda-crt cuda-nvcc cuda-nvcc_linux-64 cuda-nvcc_linux-aarch64 cuda-nvcc_win-64 cuda-nvvm
+pixi global install cuda-crt cuda-nvcc cuda-nvcc_linux-64 cuda-nvcc_linux-aarch64 cuda-nvcc_win-64 cuda-nvcc_win-arm64 cuda-nvvm
 ```
 
 </details>
